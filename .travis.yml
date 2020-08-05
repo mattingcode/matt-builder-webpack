@@ -9,6 +9,9 @@ cache:
 
 node_js: stable
 
+branchs:
+  only:
+    - master
 install:
   - npm install -D
   - cd ./test/smoke/template
@@ -16,4 +19,4 @@ install:
   - cd ../../../
 
 script:
-  - npm test
+  - npm publish
